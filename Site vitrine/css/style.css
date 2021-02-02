@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/KaushanScript-Regular.ttf')
+}
+
+@media (max-width: 800px) {
+ 	header .introduction {
+			padding-right: 20em
+	}
+}
+
+body {
+	background-color: #343a40 !important
+}
+
+section {
+	padding: 75px 0 75px 0;
+	text-align: center;
+	background-color: #F8F8FF
+}
+
+section#comparatif{
+	padding: 0px;
+}
+
+section .section-titre {
+	padding: 50px
+}
+
+section#footer{
+	padding:10px;
+	background-color : #343a40;
+	color: white;
+	font-size: 20px;
+}
+
+
+a.navbar-brand.titre {
+	font-family: "Kaushan Script",cursive
+}
+
+
+header {
+    background: url(../images/background.jpg) no-repeat center;
+	padding: 220px;
+    background-size: cover;
+    text-align: center;
+    color: #FFF
+}
+
+header .introduction {
+	padding-top: 100px;
+	padding-bottom: 50px
+}
+
+header #titre {
+	font-size: 30px;
+    font-style: italic;
+    line-height: 30px;
+    margin-bottom: 25px
+}
+
+header #sous-titre {
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 60px;
+	margin-bottom: 40px
+}
+
+
+section#coloris span {
+	font-size: 80px;
+	padding: 30px
+}
+
+.glyphicon-leaf {
+	animation: vert 4s linear infinite;
+	color: #228B22
+}
+
+.glyphicon-fire {
+	animation: rouge 4s linear infinite;
+	color: #B22222
+}
+
+.glyphicon-cloud {
+	animation: violet 4s linear infinite;
+	color: #610990
+}
+
+.glyphicon-tint {
+	animation: bleu 4s linear infinite;
+	color: #6495ED
+}
+
+section#contact {
+	background-color: #222;
+	color: #FFF;
+	background: url('../images/contact.png') no-repeat center
+}
+
+section#contact .section-titre {
+	padding: 50px
+}
+
+section#contact textarea {
+	height: 9em
+}
+
+
+
+section#model img {
+	max-width: 350px
+
+
+}
+
+section#model h2 {
+	margin: 0px
+}
+
+section#comparatif {
+	text-align: left;
+
+}
+
+section#comparatif .thumbnail > img {
+	height: 200px;
+	border-radius: 20px;
+	width: 100%
+}
+
+
+@keyframes vert {
+	100% { transform:rotate(360deg) }
+}
+
+@keyframes violet {
+	50% { transform: scale(1.4) }
+	100% { transform: scale(1.0) }
+}
+
+@keyframes rouge {
+  0%   { transform: rotate(-3deg) }
+  20%  { transform: rotate(3deg) }
+  40%  { transform: rotate(-3deg) }
+  60%  { transform: rotate(3deg) scaleY(1.2) }
+  80%  { transform: rotate(-2deg) scaleY(0.8) }
+  100% { transform: rotate(2deg) }
+}
+
+@keyframes bleu {
+
+  20%, 60% {
+    transform: rotate3d(0, 0, 1, 40deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out
+  }
+
+  40%, 80% {
+    transform: rotate3d(0, 0, 1, 30deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+    opacity: 1
+  }
+
+}
